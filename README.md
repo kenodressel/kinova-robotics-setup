@@ -22,8 +22,6 @@ We also need some ROS dependencies:
 ```
 sudo apt-get install ros-indigo-moveit
 sudo apt-get install ros-indigo-trac-ik
-sudo apt-get install ros-indigo-gazebo-ros*
-sudo apt-get install ros-indigo-ros-controllers*
 ```
 
 
