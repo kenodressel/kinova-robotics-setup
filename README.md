@@ -43,6 +43,7 @@ Finally add the repo to your environment
 
 ```
 echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
+echo "source /opt/ros/indigo/setup.bash" >> ~/.bashrc
 source ~/.bashrc
 ```
 
@@ -51,6 +52,17 @@ To finally run simulation of the robot use this:
 ```
 roslaunch j2n6s300_moveit_config j2n6s300_virtual_robot_demo.launch
 ```
-
-
+## Run with Real Robot
+if a real robot is connected to the computer via USB, you can bring up the controll via the following steps. First a one time setup is required:
+```
+sudo cp ~/catkin_ws/src/kinova-ros/kinova_driver/udev/10-kinova-arm.rules /etc/udev/rules.d/
+```
+then each time you have to run two commands in seperate shells:
+```
+roslaunch kinova_bringup kinova_robot.launch kinova_robotType:=j2n6s300
+```
+and in the other shell
+```
+roslaunch j2n6s300_moveit_config j2n6s300_demo.launch
+```
 
