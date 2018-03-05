@@ -20,8 +20,7 @@ We need some tools to run the installation process. Run the following commands:
 We also need some ROS dependencies:
 
 ```
-sudo apt-get install ros-indigo-moveit
-sudo apt-get install ros-indigo-trac-ik
+sudo apt-get install ros-indigo-moveit ros-indigo-trac-ik ros-indigo-opencv3
 ```
 
 
@@ -43,7 +42,6 @@ Finally add the repo to your environment
 
 ```
 echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
-echo "source /opt/ros/indigo/setup.bash" >> ~/.bashrc
 source ~/.bashrc
 ```
 
