@@ -44,3 +44,7 @@ export ROS_MASTER_URI=http://mainpc.local:11311
 roslaunch raspicam_node camerav1_1280x720.launch
 ```
 Please adjust the last line according to the appropirate launchfile (looking at camera version and resultion).
+
+## Tips
+
+- Make sure no X-Server is running. This can significantly impact the performance of the raspberry pi.
