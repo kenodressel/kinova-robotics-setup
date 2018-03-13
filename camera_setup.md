@@ -15,7 +15,7 @@ This has to be done on the raspberry pi.
 
 ### Modifications
 
-There are some optional modifications that can be done. We lowered the resultion of the recordings to 640*480 as this gave satisfactory results and resulted in a higher throughput of frames per second.
+There are some optional modifications that can be done. We lowered the resultion of the recordings to 600*600 as this gave satisfactory results and resulted in a higher throughput of frames per second.
 This can be easily done in the provided launch files of the camera node mentioned above.
 
 ## Communication
